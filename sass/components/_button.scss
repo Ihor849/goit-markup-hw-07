@@ -1,33 +1,21 @@
-.button--hero,
-.button-form,
-.form__button {
+.button--hero {
     @extend %button;
-    padding: 10px 32px;
-    transition: background-color $transition ;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    &:hover,
-    &:focus {
-        background-color: $color-hover-188CE8;
-    }
-
+    width: 216px;
 }
 
-
-.button-form {
-    width: 200px;
-    height: 50px;
+.button--form {
+    @extend %button;
     @include centeredFlex(inline-flex);
-    width: 200px;
-    height: 50px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
-    transition: background-color $transition;
+.button--modal {
+    @include centeredFlex(flex);
+    @extend %button;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    &:hover {
-        background-color: $color-hover-188CE8;
-    }
 }
 
 /* =================  PORTFOLIO  ==================== */
@@ -60,7 +48,7 @@
     }
 }
 
-.nav__butten--all {
+.nav__butten--first {
     padding-left: 25px;
     padding-right: 25px;
 

@@ -69,7 +69,8 @@
         border: 1px solid $color-accent-2196F3;
     }
 
-    &:focus~.form__icon {
+    &:focus~.form__icon, 
+    &:hover~.form__icon {
         color: $color-accent-2196F3;
     }
 
@@ -189,19 +190,6 @@
 }
 
 
-.form__button {
-    @include centeredFlex(flex);
-    width: 200px;
-    padding: 10px 52px;
-    margin: auto;
-    cursor: pointer;
-    transition: background-color $transition;
 
-    &:focus,
-    &:hover {
-        background-color: $color-accent-2196F3;
-    }
-
-}
 
 
