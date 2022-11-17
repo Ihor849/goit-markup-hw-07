@@ -1,36 +1,19 @@
-.container__logo-header {
-@include centeredFlex(flex);
-
-}
-
 .contacts {
     @include centeredFlex(flex);
 }
 
 .logo-link,
-.logo-link__text,
-.footerlogo {
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+.logo-link__text {
+    @extend %logo;
 }
 
-.headerlogo,
-.logo-web {
-    @include centeredFlex(inline-block);
-}
 
 .logo-link__text {
-    color: #2196F3;
+    color: $color-accent-2196F3;
 }
 
-.logo-link {
-    color: #000000;
-}
 
 .logo-link--footer {
-    color: #ffffff;
+    color: $color-FFFFFF;
 
 }

@@ -65,7 +65,7 @@
     color: $color-secondary-txt;
     transition: border $transition;
 
-    &:focus {
+    &:focus, &:hover {
         border: 1px solid $color-accent-2196F3;
     }
 
@@ -113,7 +113,8 @@
     resize: none;
     transition: border $transition;
 
-    &:focus {
+    &:focus,
+    &:hover {
         border: 1px solid $color-accent-2196F3;
     
     }
@@ -127,12 +128,12 @@
     color: $color-main-txt;
 }
 
-.form__checkbox {
+.form__check {
     margin-bottom: 30px;
 }
 
 
-.form__chec-label {
+.form__check-label {
     position: relative;
     font-size: 14px;
     margin-left: 36px;
@@ -142,7 +143,7 @@
     transition: color $transition;
 }
 
-.form__chec-input {
+.form__check-input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -154,27 +155,27 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 
-    &:focus+.form__chec-icon {
+    &:focus+.form__check-icon, &:hover+.form__check-icon {
         border-color: $color-accent-2196F3;
     }
 
-    &:checked~.form__chec-icon {
-        background-color: $color-212121;
-        background-image: url(../../images-4/icons.svg/Vicon\ check\ \(1\).svg);
+    &:checked~.form__check-icon {
+        background-color: $color-accent-2196F3;
+        background-image: url(../../images/icons.svg/Vicon\ check\ \(1\).svg);
         background-size: contain;
         background-origin: border-box;
         border-color: $color-accent-2196F3;
     }
+
+
 }
 
-
-
-.form__link {
+.form__check-link {
     color: $color-accent-2196F3;
     text-decoration: underline;
 }
 
-.form__chec-icon {
+.form__check-icon {
     position: absolute;
     left: -23px;
     bottom: 0;

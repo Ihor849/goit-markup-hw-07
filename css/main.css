@@ -344,12 +344,33 @@ img {
   cursor: pointer;
 }
 
+.logo-link,
+.logo-link__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  color: #000000;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.container--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container--slogan {
@@ -498,18 +519,6 @@ img {
   gap: 50px;
 }
 
-.container__logo-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,36 +531,12 @@ img {
           justify-content: center;
 }
 
-.logo-link,
-.logo-link__text,
-.footerlogo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-}
-
-.headerlogo,
-.logo-web {
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .logo-link__text {
   color: #2196F3;
 }
 
-.logo-link {
-  color: #000000;
-}
-
 .logo-link--footer {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .social-networks {
@@ -1052,7 +1037,7 @@ img {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__field:focus {
+.form__field:focus, .form__field:hover {
   border: 1px solid #2196F3;
 }
 .form__field:focus ~ .form__icon {
@@ -1092,7 +1077,7 @@ img {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__textarea:focus {
+.form__textarea:focus, .form__textarea:hover {
   border: 1px solid #2196F3;
 }
 
@@ -1103,11 +1088,11 @@ img {
   color: #757575;
 }
 
-.form__checkbox {
+.form__check {
   margin-bottom: 30px;
 }
 
-.form__chec-label {
+.form__check-label {
   position: relative;
   font-size: 14px;
   margin-left: 36px;
@@ -1118,7 +1103,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__chec-input {
+.form__check-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1131,23 +1116,23 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.form__chec-input:focus + .form__chec-icon {
+.form__check-input:focus + .form__check-icon, .form__check-input:hover + .form__check-icon {
   border-color: #2196F3;
 }
-.form__chec-input:checked ~ .form__chec-icon {
-  background-color: #212121;
-  background-image: url(../../images-4/icons.svg/Vicon\ check\ \(1\).svg);
+.form__check-input:checked ~ .form__check-icon {
+  background-color: #2196F3;
+  background-image: url(../../images/icons.svg/Vicon\ check\ \(1\).svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196F3;
 }
 
-.form__link {
+.form__check-link {
   color: #2196F3;
   text-decoration: underline;
 }
 
-.form__chec-icon {
+.form__check-icon {
   position: absolute;
   left: -23px;
   bottom: 0;
@@ -1187,7 +1172,7 @@ img {
   padding-bottom: 15px;
   padding-left: 16px;
   margin-right: 12px;
-  color: #2F303A;
+  color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;
