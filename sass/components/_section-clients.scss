@@ -1,0 +1,31 @@
+.clients {
+    @include centeredFlex(flex);
+    gap: 30px;
+
+}
+
+.clients__link {
+    @include centeredFlex(flex);
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+
+    background-color: $color-FFFFFF;
+    border: 1px solid $color-AFB1B8;
+    border-radius: 4px;
+    transition: border-color $transition, color $transition;
+    color: $color-AFB1B8;
+    
+    &:focus,
+    &:hover {
+        border: 1px solid $color-accent-2196F3;
+        color: $color-accent-2196F3;
+    }
+}
+
+
+.clients__icon {
+    fill: currentColor;
+
+}
+

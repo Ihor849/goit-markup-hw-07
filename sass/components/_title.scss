@@ -1,0 +1,66 @@
+.section-title {
+    @extend %visually-hidden;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section__title {
+    @extend %section__title;
+}
+
+.section__title--work {
+    @extend %section__title;
+}
+
+
+.section__title--clients {
+    @extend %section__title;
+}
+
+.title-social {
+    display: inline-block;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: $color-FFFFFF;
+
+}
+
+/* =================  PORTFOLIO  ==================== */
+
+.title-portfolio {
+    @extend %visually-hidden
+}
+
+.title-card {
+    margin-bottom: 4px;
+
+    color: $color-secondary-txt;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+}
+
+.title-card__text {
+
+    color: $color-main-txt;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+}
