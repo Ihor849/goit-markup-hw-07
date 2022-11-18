@@ -166,8 +166,8 @@
     }
 
     &:checked~.form__check-icon {
-        background-color: $color-accent-2196F3;
         background-image: url(../../images/icons.svg/Vicon\ check\ \(1\).svg);
+        background-color: $color-accent-2196F3;
         background-size: contain;
         background-origin: border-box;
         border-color: $color-accent-2196F3;

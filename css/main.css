@@ -1117,8 +1117,8 @@ img {
   border-color: #2196F3;
 }
 .form__check-input:checked ~ .form__check-icon {
-  background-color: #2196F3;
   background-image: url(../../images/icons.svg/Vicon\ check\ \(1\).svg);
+  background-color: #2196F3;
   background-size: contain;
   background-origin: border-box;
   border-color: #2196F3;
