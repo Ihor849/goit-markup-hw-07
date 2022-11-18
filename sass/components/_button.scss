@@ -33,6 +33,7 @@
     transition: background-color $transition,
     color $transition,
     box-shadow $transition;
+    cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
